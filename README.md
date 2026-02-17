@@ -111,3 +111,4 @@ In `micro_model_settings.h`:
 - `kFeatureCount`: instead of the 49 we update it with the newly calculated count based on the 500ms window size, which is 24 (*Future note*: instead of magic numbers use definitions if possible)
 - `kCategoryCount`: for now it detects 2 (yes and no) + silence and unknown, the newly added categories are mentioned above (just for testing) are 10, so the final value of the category count is 12.
 - `kCategoryLabels`: update the labels in the same order as training labels:
+- `kMicroSpeechArenaSize`: since the new model is bigger the arena size is updated to suit the new requirements for the new model.

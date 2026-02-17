@@ -1,1 +1,0 @@
-"mcuboot":"/home/fyd/gsoc-micro-speech-west/bootloader/mcuboot":"/home/fyd/gsoc-micro-speech-west/bootloader/mcuboot/boot/zephyr/sysbuild"

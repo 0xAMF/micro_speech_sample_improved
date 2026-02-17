@@ -1,0 +1,23 @@
+# Available runners configured by board.cmake.
+runners:
+- misc-flasher
+
+# Default flash runner if --runner is not given.
+flash-runner: misc-flasher
+
+# Common runner configuration values.
+config:
+  board_dir: /home/fyd/gsoc-micro-speech-west/zephyr/boards/nxp/imx8mp_evk
+  # Build outputs:
+  elf_file: micro_speech_openamp.elf
+  # Host tools:
+  gdb: /home/fyd/zephyr-sdk-0.17.4/xtensa-nxp_imx8m_adsp_zephyr-elf/bin/xtensa-nxp_imx8m_adsp_zephyr-elf-gdb-py
+  openocd: /home/fyd/zephyr-sdk-0.17.4/sysroots/x86_64-pokysdk-linux/usr/bin/openocd
+  openocd_search:
+    - /home/fyd/zephyr-sdk-0.17.4/sysroots/x86_64-pokysdk-linux/usr/share/openocd/scripts
+
+# Runner specific arguments
+args:
+  misc-flasher:
+    []
+

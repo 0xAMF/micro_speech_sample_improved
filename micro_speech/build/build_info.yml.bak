@@ -1,0 +1,64 @@
+cmake:
+  application:
+    configuration-dir: '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech'
+    source-dir: '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech'
+  board:
+    name: 'imx8mp_evk'
+    path:
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/boards/nxp/imx8mp_evk'
+    qualifiers: 'mimx8ml8/adsp'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/bindings'
+    files:
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/boards/nxp/imx8mp_evk/imx8mp_evk_mimx8ml8_adsp.dts'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech/boards/imx8mp_evk_mimx8ml8_adsp.overlay'
+    include-dirs:
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/ambiq/dts'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/atmel/include'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/bouffalolab/include'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/bouffalolab/include/zephyr'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/gigadevice/include'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/microchip/include'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/microchip/dts'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/nuvoton/dts'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/nxp/dts'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/stm32/dts'
+     - '/home/fyd/gsoc-micro-speech-west/modules/hal/ti/dts'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/boards/nxp/imx8mp_evk/dts'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/include'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/include/zephyr'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/common'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/vendor'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/rx'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/x86'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/xtensa'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/sparc'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/riscv'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/posix'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/arm64'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/arm'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts/arc'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/dts'
+    user-files:
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech/boards/imx8mp_evk_mimx8ml8_adsp.overlay'
+  kconfig:
+    files:
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/boards/nxp/imx8mp_evk/imx8mp_evk_mimx8ml8_adsp_defconfig'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech/prj.conf'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech/boards/imx8mp_evk_mimx8ml8_adsp.conf'
+    user-files:
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech/prj.conf'
+     - '/home/fyd/gsoc-micro-speech-west/zephyr/samples/modules/tflite-micro/micro_speech/boards/imx8mp_evk_mimx8ml8_adsp.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/fyd/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: '/home/fyd/gsoc-micro-speech-west/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/fyd/.local/bin/west build -b imx8mp_evk/mimx8ml8/adsp'
+  topdir: '/home/fyd/gsoc-micro-speech-west'
+  version: '1.5.0'
